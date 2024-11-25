@@ -6,6 +6,30 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <!-- <script>
+        let str = "                 Hello World!             ";
+        // console.log(str);
+        console.log(str.trim()); //trim က space တွေကို ဖျက်ပေးသွား
+        // console.log(str.toLocaleUpperCase());
+        console.log(str.toLocaleLowerCase());
+    </script> -->
+
+    <script>
+         let str = prompt("Enter a string.");
+        function palindrome(str) {
+            if (str.trim().length === 0) {
+                document.write("You did not enter anything.")
+                return;
+            }
+            str = str.toLowerCase();
+            let reversedStr = str.split("").reverse().join("");
+            if(str === reversedStr) {
+                document.write("It is a palindrome.");
+            } else {
+                document.write("It is not a palindrome.")
+            }
+        }
+        palindrome(str);
+    </script>
 </body>
 </html>

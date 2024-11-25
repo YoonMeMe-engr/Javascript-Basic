@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        // arc = car // acr
+        // brag = grab // abgr
+        // elbow = below // below
+        // state = taste // aestt
+        // listen = silent // eilnst
+
+        let str = "hello";
+        document.write(str.split("").sort().join(""));
+    </script> -->
+
+    <script>
+        let str1 = prompt("Enter the first string.");
+        let str2 = prompt("Enter the second string.");
+
+        function areaAnagrams(str1, str2) {
+            if(str1 == null || str2 == null) {
+                document.write("Input cancelled.");
+                return;
+            }
+
+            if(str1.trim().length == 0 || str2.trim().length == 0) {
+                document.write("Please input valid string.");
+                return; // အောက်က ကုဒ်တွေ ဆက်မrunချင်တော့လို့ return သုံး function ကို ဒီနေရာမှာတင် ရပ်လိုက်တာ
+            };
+            str1 = str1.toLowerCase().split("").sort().join("");
+            str2 = str2.toLowerCase().split("").sort().join("");
+            if(str1 === str2) {
+                document.write("They are anagrams.");
+            } else {
+                document.write("They are not anagrams.")
+            }
+        }
+        areaAnagrams(str1,str2);
+    </script>
+</body>
+</html>
