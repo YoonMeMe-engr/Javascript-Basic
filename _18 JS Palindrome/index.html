@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        //radar, level // ရှေ့က ဖတ်လဲ radar နောက်က ဖတ်လဲ radar အဲဒါကို Palindrome လို့ခေါ်
+        // split, reverse, join
+        let str = "How Lucky you are.";
+        // let result = str.split("");
+        let result = str.split(" ");
+        // document.write(result);
+        // document.write(result.reverse());
+        document.write(result.reverse().join(""));
+    </script> -->
+
+    <script>
+        // Palindrome
+        // let str = "radar";
+        let str = prompt("Enter a string.");
+        function palindrome(str) {
+            let reversedStr = str.split("").reverse().join("");
+            if(str === reversedStr) {
+                document.write("It is a palindrome.");
+            } else {
+                document.write("It is not a palindrome.")
+            }
+        }
+        palindrome(str);
+        // Radar === radaR ဆိုရင် not palindrome ဖြစ်သွား / promp မှာ ဘာမှ မရေးရင်လဲ palindrome ဖြစ်သွား
+        // နောက် Video မှာ Error ရှင်းမယ်
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //forEach(), map() // map က array အသစ်တစ်ခု return ပြန်ပေးတယ်
+        let people = ["Hla Hla", "Mya Mya", "Aung Aung", "Kyaw Kyaw", "Mya Mya"];
+        // people.forEach((function(person){
+        //     console.log(person);
+        // }))
+        // people.forEach(person => console.log(person));
+        people.forEach(function(personName){
+            document.write(personName + "<br>");
+        })
+    </script>
+</body>
+</html>

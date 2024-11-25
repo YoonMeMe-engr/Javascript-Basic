@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // filter()
+        // let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        // const evenNumbers = numbers.filter(function(number) {
+        //     return number % 2 === 0;
+        // });
+        // console.log(evenNumbers);
+
+        // const oddNumbers = numbers.filter(function(number) {
+        //     return number % 2 !== 0;
+        // });
+        // console.log(oddNumbers);
+
+        // const aboveFive = numbers.filter(number => number > 5);
+        // console.log(aboveFive);
+
+        let employees = [
+            { name: 'Aung Aung', age: 35, occupation: 'engineer'},
+            { name: 'Aye Aye', age: 40, occupation: 'manager'},
+            { name: 'Mya Mya', age: 28, occupation: 'developer'},
+            { name: 'Zaw Zaw', age: 45, occupation: 'designer'},
+            { name: 'Tun Tun', age: 50, occupation: 'HR'},
+            { name: 'Min Min', age: 33, occupation: 'programmer'},
+        ];
+        const filterResult = employees.filter(employee => employee.occupation == "developer");
+        console.log(filterResult);
+    </script>
+</body>
+</html>
