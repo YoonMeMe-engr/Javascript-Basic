@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        let name = "Yoon Me Me";
+        // document.write(name);
+        // document.write(name[0]);
+        document.write(name.length);
+    </script> -->
+
+    <textarea oninput="updateCount()" name="" id="myArea"></textarea>
+    <h2 id="result"></h2>
+    <script>
+        function updateCount() {
+            let myText = document.getElementById("myArea").value;
+            document.getElementById("result").innerHTML = myText.length;
+        }
+    </script>
+</body>
+</html>

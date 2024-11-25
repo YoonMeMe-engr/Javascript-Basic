@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //sort(), reverse()
+        // let people = ["Hla Hla","Zaw Zaw", "Mya Mya", "Aung Aung", "Kyaw Kyaw", "Aye Aye"];
+        // people.sort();
+        // people.reverse();
+        // document.write(people);
+
+        let numbers = [11, 15, 1, 14, 20, 24, 2, 45, 22, 55, 17];
+        numbers.sort(function(a,b){
+            // return a - b;
+            return b - a;
+        });
+        document.write(numbers);
+    </script>
+</body>
+</html>
