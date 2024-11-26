@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        // let result = Math.round(2.4);
+        // let result = Math.floor(2.9); // 2
+        // let result = Math.ceil(1.1);
+        // let result = Math.random() * 10; // 0 to 10
+        // let result = Math.floor(Math.random() * 10); // 0 to 9
+        let result = Math.floor(Math.random() * 10) + 1; // 1 to 10
+        document.write(result);
+    </script> -->
+
+    <!-- <script>
+        let num1 = 10;
+        let num2 = 20;
+        let sum = num1 + num2;
+        // document.write(num1 + " + " + num2 + " = " + sum);
+        document.write(`${num1} + ${num2} = ${sum}`);
+    </script> -->
+
+    <button onclick="changeBg()" id="btn">Click me to change color.</button>
+
+    <script>
+        function changeBg() {
+            document.body.style.backgroundColor = randomColor();
+        }
+
+        function randomColor() {
+            const colorRed = Math.floor(Math.random() * 256);
+            const colorYellow = Math.floor(Math.random() * 256);
+            const colorOrange = Math.floor(Math.random() * 256);
+            return `rgb(${colorRed}, ${colorYellow}, ${colorOrange})`;
+        }
+    </script>
+</body>
+</html>

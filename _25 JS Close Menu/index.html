@@ -4,8 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/1c9073b405.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        button {
+            font-size: 50px;
+        }
+    </style>
 </head>
 <body>
-    
+    <button id="btn"><i class="fa fa-bars"></i></button>
+
+    <script>
+        let btn = document.getElementById("btn");
+        let menuOpen = false;
+
+        btn.addEventListener("click", () => {
+            menuOpen = !menuOpen; // true => false => true => false
+            if(menuOpen === true) //(menuOpen)
+        {
+                btn.innerHTML = `<i class="fa fa-close"></i>`;
+            } else {
+                btn.innerHTML = `<i class="fa fa-bars"></i>`;
+            }
+        })
+    </script>
 </body>
 </html>

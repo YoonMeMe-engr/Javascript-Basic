@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+    // map, charAt, slice, split
+    let fruits = ['Grape', 'Apple', 'Orange', 'Grapefruit', 'Pear', 'Coconut'];
+    // let result = fruits.map(fruit => fruit);
+    // let result = fruits.map(fruit => fruit + 's');
+    // let result = fruits.slice();
+    // let result = fruits.slice(1);
+    // let result = fruits.slice(-1);
+    let result = fruits.slice(2, 4);
+    document.write(result);
+    </script> -->
+
+    <!-- <script>
+        let str = "nothing is permanent.";
+        // let result = str.split(" ").map(word => word.slice(1));
+        // let result = str.split(" ").map(word => word.slice(1));
+        let result = str.split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
+        document.write(result);
+    </script> -->
+
+    <script>
+        let str = "hello world!";
+        function capitalize() {
+            return str.split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
+        }
+        let result = capitalize(str);
+        document.write(result);
+    </script>
+</body>
+</html>

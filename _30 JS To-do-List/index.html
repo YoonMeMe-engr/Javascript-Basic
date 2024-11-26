@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            border: 1px solid #0f36a1;
+            border-radius: 10px;
+            width: 80%;
+            margin: 20px;
+        }
+
+        .inputBox {
+            width: 90%;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="inputBox">
+            <input type="text" id="inputBox">
+            <button onclick="addItem()" id="btn">Add Item</button>
+       </div>
+       <ul id="lists"></ul>
+    </div>
+
+    <script>
+        let inputBox = document.getElementById("inputBox");
+        let lists = document.getElementById("lists");
+
+        function addItem() {
+            let list = document.createElement("li"); // li အလွတ်ဆောက်တာ
+            list.textContent = inputBox.value;
+            lists.appendChild(list);
+            // lists.prepend(list);
+            inputBox.value = "";
+        }
+    </script>
+</body>
+</html>

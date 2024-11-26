@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function changeBg(color) {
+            document.body.style.backgroundColor = color;
+        }
+
+        setTimeout(function(){
+            changeBg("red");
+        }, 2000);
+
+        setTimeout(function(){
+            changeBg("yellow");
+        }, 4000);
+
+        setTimeout(function(){
+            changeBg("orange");
+        }, 6000);
+    </script>
+</body>
+</html>

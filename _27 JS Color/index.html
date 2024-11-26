@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let colors = ['red', 'cyan', 'orange', 'yellow'];
+        let currentIndex = 0;
+        const changeBg = () => {
+            document.body.style.backgroundColor = colors[currentIndex];
+            // currentIndex = (currentIndex + 1) % colors.length;
+            currentIndex++;
+            if(currentIndex == colors.length) {
+                currentIndex = 0;
+            }
+            setTimeout(changeBg, 2000);
+        }
+        changeBg();
+    </script>
+</body>
+</html>
