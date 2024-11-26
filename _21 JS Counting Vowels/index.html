@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        // match method, regular expression (regexp)
+        let str = "The main aim of this campaign is to train the team in SPAIN.";
+        // let result = str.match(/ain/gi); // g=global i=insensitive 
+        let result = str.match(/[aeiou]/gi);
+        document.write(result);
+    </script> -->
+
+    <script>
+        let string = "The main aim of this campaign is to train the team in SPAIN.";
+        
+        function countVowels(string) {
+            let vowels = string.match(/[aeiou]/gi);
+            return vowels ? vowels.length : 0;
+        }
+        let result = countVowels(string);
+        document.write(result);
+    </script>
+</body>
+</html>
