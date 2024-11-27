@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        let str = 'A beautiful girl who has right habits for her life is a perfect girl.';
+
+        const findLongest = (str) => {
+            let words = str.split(" "); // split လုပ်ရင် array ဖြစ်
+            let longestWord = "";
+            for(let i = 0; i < words.length; i++) {
+                if(longestWord.length < words[i].length) {
+                    longestWord = words[i];
+                }
+            }
+            return longestWord;
+        }
+        document.write(findLongest(str));
+    </script> -->
+
+    <!-- <script>
+        let str = 'A beautiful girl who has right habits for her life is a perfect girl.';
+
+         const findLongest = (str) => {
+            let words = str.split(" "); // split လုပ်ရင် array ဖြစ်
+            let longestWord = "";
+           words.forEach(word => {
+            if(longestWord.length < word.length) {
+                longestWord = word;
+            }
+           });
+           return longestWord;
+        }
+        document.write(findLongest(str));
+    </script> -->
+
+    <script>
+        let str = 'A beautiful girl who has right habits for her life is a perfect girl.';
+
+         const findLongest = (str) => {
+            return str.split(" ").reduce((preVal, curVal) => preVal.length < curVal.length ? curVal : preVal, "")
+        }
+        document.write(findLongest(str));
+    </script>
+</body>
+</html>

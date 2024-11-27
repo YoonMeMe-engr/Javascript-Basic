@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/1c9073b405.js" crossorigin="anonymous"></script>
+    <style>
+        i {
+            font-size: 50px;
+            color: khaki;
+        }
+    </style>
+</head>
+<body>
+    <i id="build" class="fa fa-building"></i>
+    <button onclick="changeIcon()">Click me to change</button>
+
+    <script>
+        const icon = document.getElementById("build");
+        let noChange = true;
+        const changeIcon = () => {
+            if(noChange) {
+                icon.classList.remove("fa-building");
+                icon.classList.add("fa-home");
+                icon.style.color = "lightblue";
+            } else {
+                icon.classList.add("fa-building");
+                icon.classList.remove("fa-home");
+                icon.style.color = "khaki";
+            }
+            noChange = !noChange;
+        }
+    </script>
+</body>
+</html>
