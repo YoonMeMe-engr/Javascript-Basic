@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #image {
+            width: 700px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <img id="image" src="./1.jpg" alt="">
+    <button onclick="changeImage()" id="btn">Click me to change image</button>
+
+    <script>
+        let imgSource = ["1.jpg", "2.jpg"];
+        let currentIndex = 0;
+        const changeImage = () => {
+            let image = document.getElementById("image");
+            currentIndex = (currentIndex + 1) % imgSource.length;
+            image.src = imgSource[currentIndex];
+        }
+    </script>
+</body>
+</html>

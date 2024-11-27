@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        span {
+            background-color: aquamarine;
+            color: white;
+            font-size: 100px;
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <span id="clock"></span>
+
+    <script>
+        const clock = () => {
+            let date = new Date;
+            let hours = date.getHours();
+            let minutes = date.getMinutes();
+            let seconds = date.getSeconds();
+            hours = hours <= 12 ? hours : hours - 12;
+            hours = hours < 10 ? "0" + hours : hours;
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+            let amPM = hours >= 12 ? "AM" : "PM";
+
+            document.getElementById("clock").innerHTML = hours + " : " + minutes + " : " + seconds + ' ' + amPM;
+            // document.write(date);
+            // document.write(date.getHours());
+        }
+        clock();
+        setInterval(clock, 1000);
+    </script>
+</body>
+</html>

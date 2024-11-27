@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        let arr1 = [12, 34, -1, 100, 99, -2, 40];
+        let arr2 = [1, 2, 3, 4, 5];
+        let combineArr = [...arr1, ...arr2];
+        document.write(combineArr);
+    </script> -->
+
+    <!-- <script>
+        let numbers = [12, 34, -1, 100, 99, -2, 40];
+        let [one, two, ...rest] = numbers;
+        document.write(two);
+    </script> -->
+
+    <!-- <script>
+        let week = ['Sun', 'Mon', 'Wed', 'Thu', 'Fri', 'Sat'];
+        week.splice(2, 0, 'Tue');
+        document.write(week);
+    </script> -->
+
+    <!-- <script>
+        let week = ['Sun', 'Mon', 'Extra', 'Extra2', 'Wed', 'Thu', 'Fri', 'Sat'];
+        week.splice(2, 2, 'Tue');
+        document.write(week);
+    </script> -->
+
+    <!-- <script>
+        let numbers = [12, 34, -1, 100, 99, -2, 40];
+        let largestNum = Math.max(...numbers);
+        numbers.splice(numbers.indexOf(largestNum), 1);
+        let secLargestNum = Math.max(...numbers);
+
+        // document.write(largestNum);
+        // document.write(numbers.indexOf(largestNum));
+        document.write(secLargestNum);
+    </script> -->
+
+    <script>
+        let numbers = [12, 34, -1, 100, 99, -2, 40];
+        // let sortedNum = numbers.sort((a,b) => a - b);
+        let sortedNum = numbers.sort((a,b) => b - a);
+        document.write(sortedNum);
+    </script>
+</body>
+</html>
