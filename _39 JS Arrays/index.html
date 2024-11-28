@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        let ages = [12, 18, 34, 10, 23, 44, 17, 100];
+        let strings = ['apple', 'banana', 'orange', 'grape', 'lime'];
+        let result = ages.filter(age=> age >= 18);
+        // let result1 = strings.filter(str=> str.length > 5);
+        // let result1 = strings.filter(str=> str[0] == 'b');
+        // let result1 = strings.filter(str=> str.startsWith('g'));
+        let result1 = strings.filter(str=> str.includes('g'));
+        document.write(result + '<br>');
+        document.write(result1);
+    </script> -->
+
+    <script>
+        let arr1 = [12, 18, 34, 10, 23, 44, 17, 100];
+        let arr2 = [1001, 19, 18, 20, 44];
+        let result = arr1.filter(ele=> arr2.includes(ele))
+        document.write(result);
+    </script>
+</body>
+</html>
