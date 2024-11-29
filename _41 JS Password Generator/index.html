@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        let words = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*()';
+        let password = '';
+        for (let i=0; i<8; i++) {
+            let randomNum = Math.floor(Math.random() * words.length);
+            password = password + words[randomNum];
+        }
+        document.write(password);
+    </script> -->
+
+    <!-- <script>
+        function passwordGenerator(length){
+            let words = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*()';
+        let password = '';
+        for (let i=0; i<length; i++) {
+            let randomNum = Math.floor(Math.random() * words.length);
+            password = password + words[randomNum];
+        }
+        return password;
+        }
+        let pass = passwordGenerator(10);
+        document.write(pass);
+    </script> -->
+
+    <!-- <script>
+        let arr = ['apple', 'orange', 'grape', 'garlic', 'onion'];
+        arr.fill('kiwi', 1, 4);
+        document.write(arr);
+    </script> -->
+
+    <script>
+        function passwordGenerator(length){
+            let words = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*()';
+            let password = '';
+            Array(length).fill().forEach(() => {
+                let randomNum = Math.floor(Math.random() * words.length);
+                password = password + words[randomNum];
+            })
+            return password;
+        }
+        let pass = passwordGenerator(10);
+        document.write(pass);
+    </script>
+</body>
+</html>

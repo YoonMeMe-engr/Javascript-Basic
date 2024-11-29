@@ -19,6 +19,18 @@
             border-radius: 10px;
         }
 
+        label {
+            color: white;
+        }
+
+        input {
+            background-color: #1c6186;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 10px;
+        }
+
         button {
             border-radius: 10px;
             border: none;
@@ -55,9 +67,9 @@
                 month += 12;
             }
 
-            if (day < 0) {
-                day += 30;
-            }
+            // if (day < 0) {
+            //     day += 30;
+            // }
 
             if (year == 0) {
                 resultMsg = `${month} Months`;
