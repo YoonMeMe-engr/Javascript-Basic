@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        let personObj = {
+            name: "Ms. Yoon Me Me",
+            age: 33,
+            email: "yoonmeme.engr@gmail.com",
+            isSubscribed: true,
+            address: {
+                city: "Nay Pyi Taw",
+                country: "Myanmar"
+            },
+            interests: [
+                "Technology",
+                "IT",
+                "Networking",
+                "Telecom",
+                "Cloud Computing",
+                "Programming"
+            ],
+        };
+        // console.log(personObj.name);
+        // console.log(personObj.address.city);
+        // console.log(personObj.interests[1]); // dotted notation
+
+        // console.log(personObj['name']);
+        // console.log(personObj['address']['city']);
+        // console.log(personObj['interests'][0]);
+
+        // Obj to JSON
+        let jsonStr = JSON.stringify(personObj);
+        console.log(jsonStr);
+    </script> -->
+
+    <script>
+        let jsonStr = `{
+        "name":"Ms. Yoon Me Me",
+        "age":33,
+        "email":"yoonmeme.engr@gmail.com",
+        "isSubscribed":true,
+        "address":{
+            "city":"Nay Pyi Taw",
+            "country":"Myanmar"},
+        "interests":[
+            "Technology",
+            "IT",
+            "Networking",
+            "Telecom",
+            "Cloud Computing",
+            "Programming"
+        ]}`
+
+        // JSON to Obj
+        let personObj = JSON.parse(jsonStr);
+        console.log(personObj);
+    </script>
+</body>
+</html>

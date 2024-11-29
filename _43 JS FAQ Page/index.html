@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: khaki;
+        }
+
+        .container {
+            background-color: rgb(249, 251, 252);
+            margin: 5px;
+            padding: 10px;
+        }
+
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .answer {
+            background-color: lightblue;
+            padding: 8px;
+            border-radius: 7px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq">
+            <p class="question" onclick="answer(1)">What is website?</p>
+            <p class="answer" id="answer1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo ipsum sunt quaerat quisquam minima molestias laborum, consequatur quo enim, fugiat reprehenderit voluptas, debitis aliquam voluptatum dolore ab architecto quam expedita!</p>
+        </div>
+        <div class="faq">
+            <p class="question" onclick="answer(2)">How do I create a responsive website?</p>
+            <p class="answer" id="answer2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo ipsum sunt quaerat quisquam minima molestias laborum, consequatur quo enim, fugiat reprehenderit voluptas, debitis aliquam voluptatum dolore ab architecto quam expedita!</p>
+        </div>
+        <div class="faq">
+            <p class="question" onclick="answer(3)">What is Full Stack Developer?</p>
+            <p class="answer" id="answer3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo ipsum sunt quaerat quisquam minima molestias laborum, consequatur quo enim, fugiat reprehenderit voluptas, debitis aliquam voluptatum dolore ab architecto quam expedita!</p>
+        </div>
+    </div>
+
+    <script>
+        function answer(num){
+            let answer = document.getElementById('answer' + num);
+            answer.style.display = (answer.style.display) === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
